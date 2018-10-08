@@ -1,1 +1,1 @@
-# BBC-News-Scraper
+# Chicago Tribune News Scraper
