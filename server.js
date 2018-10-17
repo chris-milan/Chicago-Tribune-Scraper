@@ -1,11 +1,7 @@
 var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-
-
-// Require all models
-// var db = require("./models");
-var db = mongoose.connection;
+var exphbs = require("express-handlebars");
 
 var Note = require("./models/Note");
 var Article = require("./models/Article");
@@ -15,9 +11,6 @@ var bodyParser = require("body-parser");
 // Scraping Tools
 var axios = require("axios");
 var cheerio = require("cheerio");
-
-// Set mongoose to leverage built in JavaScript ES6 Promises
-mongoose.Promise = Promise;
 
 var PORT = process.env.PORT || 3000;
 
@@ -34,7 +27,7 @@ app.use(express.json());
 
 app.use(bodyParser.urlencoded({extended: false}));
 
-var exphbs = require("express-handlebars");
+
 app.engine("handlebars", exphbs({defaultLayout: "main"}));
 app.set("view engine", "handlebars");
 
