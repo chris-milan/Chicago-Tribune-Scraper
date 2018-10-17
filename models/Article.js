@@ -28,19 +28,10 @@ var ArticleSchema = new Schema({
 		type: Boolean,
 		default: false
 	},
-  // `notes` stores a Note id
-  // The ref property links the ObjectId to the Note model
-  // Populates the Article with an associated Note
+
   note: [{
-    // type: Schema.Types.ObjectId,
-    // ref: "Note",
-    
+
     body:  String
-   
-    // article: {
-    //   type: Schema.Types.ObjectId,
-    //   ref: "Article"
-    // }
   }]
 });
 
