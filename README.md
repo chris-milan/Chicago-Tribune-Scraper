@@ -1,6 +1,6 @@
 # Chicago Tribune Scraper
 
-This application a full-stack site that scrapes the latest headlines from the Chicago Tribune and allows users to save articles, save notes and delete notes.
+This application is a full-stack site that scrapes the latest headlines from the Chicago Tribune and allows users to save articles, save notes and delete notes.
 
 [Deployed Link](https://chicago-tribune-scraper.herokuapp.com/)
 
