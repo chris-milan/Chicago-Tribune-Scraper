@@ -1,0 +1,248 @@
+body {
+	line-height: 10mm;
+	font-family: 'Arimo', sans-serif;
+	color: white;
+	min-height: 100vh;
+	display: block;
+	position: relative;
+	padding-bottom: 100px;
+}
+
+.logo {
+	opacity: .93;
+	font-size: 30px;
+	float: left;
+	color: black;
+	text-shadow: 1px 1px black
+}
+
+.title {
+	color: white;
+	text-shadow: 3px 3px black;
+}
+
+a, a:link, a:visited {
+	color: white
+}
+
+.logo:link, .logo:visited {
+	color:#039BE5;
+}
+
+a:hover {
+	color:#FE0C0C
+}
+
+.logo:hover {
+	color:#bdeaff;
+}
+
+h1 {
+	text-align: center;
+	text-shadow: 2px 2px black;
+}
+h2 {
+	text-align: center;
+	color:#039BE5
+}
+
+h1, .logo, a, a:link, a:visited {
+	font-family: 'Playfair Display SC', serif;
+}
+
+.main-links {
+
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff2d95, 0 0 30px #ff2d95, 0 0 40px #ff2d95, 0 0 50px #ff2d95, 0 0 75px #ff2d95;
+	letter-spacing: 5px;
+	font: 40px;
+
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	padding: 20px;
+	z-index: 1;
+	border-bottom-color: #b3ddf2
+}
+
+header::after {
+	content: "";
+	background-color: white;
+	background-image: url("/assets/images/720px-Flag_of_Chicago,_Illinois.svg.png");
+	background-size: 400px;
+	background-position-y: center;
+	background-position-x: left;
+	background-repeat: no-repeat;
+	opacity: 0.9;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	position: absolute;
+	z-index: -1;
+}
+
+header button {
+	opacity: .95;
+	float: right;
+	position: relative
+}
+
+
+#main-image {
+	width: 80%;
+}
+
+.parallax-container {
+  	justify-content: center;
+	align-items: center;
+	display: flex;
+	border: solid 10px;
+}
+
+.parallax img {
+	align-items: left;
+}
+
+
+#article-image {
+	display: inline-block;
+	padding: 10px;
+	width: 20%;
+	height: auto;
+	float: left;
+}
+
+.summary-container {
+	margin-left: 30px;
+	font-size: 18px;
+	background-color: rgba(173,216,230, .8);
+	padding: 10px;
+	border: solid white 4px;
+	/* text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 10px rgba(173,216,230), 0 0 15px rgba(173,216,230), 0 0 20px rgba(173,216,230), 0 0 25px rgba(173,216,230), 0 0 50px rgba(173,216,230) */
+}
+
+.article-content {
+	padding: 20px;
+	border-bottom: inset;
+	border-bottom-color: #b3ddf2;
+	background-size: cover;
+	border: solid white 10px;
+
+}
+
+.article-content button{
+opacity: .9
+}
+
+footer {
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	background-color: #039BE5;
+	text-shadow: 2px 2px black;
+}
+
+.button {
+	border: 1px solid #ffffff;
+	background: #039BE5;
+	background: -webkit-gradient(linear, left top, left bottom, from(#039BE5), to(#039BE5));
+	background: -webkit-linear-gradient(top, #039BE5, #039BE5);
+	background: -moz-linear-gradient(top, #039BE5, #039BE5);
+	background: -ms-linear-gradient(top, #039BE5, #039BE5);
+	background: -o-linear-gradient(top, #039BE5, #039BE5);
+	background-image: -ms-linear-gradient(top, #039BE5 0%, #039BE5 100%);
+	padding: 8.5px 10px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+	-moz-box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+	box-shadow: rgba(255,255,255,0.4) 0 1px 0, inset rgba(255,255,255,0.4) 0 0px 0;
+	text-shadow: black 0 1px 0;
+	color: #ffffff;
+	font-size: 14px;
+	font-family: helvetica, serif;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.button:hover {
+	border: 1px solid #0a3c59;
+	text-shadow: #000000 0 1px 0;
+	background: #bdeaff;
+	background: -webkit-gradient(linear, left top, left bottom, from(#bdeaff), to(#bdeaff));
+	background: -webkit-linear-gradient(top, #bdeaff, #bdeaff);
+	background: -moz-linear-gradient(top, #bdeaff, #bdeaff);
+	background: -ms-linear-gradient(top, #bdeaff, #bdeaff);
+	background: -o-linear-gradient(top, #bdeaff, #bdeaff);
+	background-image: -ms-linear-gradient(top, #bdeaff 0%, #bdeaff 100%);
+	color: #ffffff;
+}
+
+.button:active {
+	text-shadow: #1e4158 0 1px 0;
+	border: 1px solid #0a3c59;
+	background: #65a9d7;
+	background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#bdeaff));
+	background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+	background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+	background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+	background: -o-linear-gradient(top, #3e779d, #65a9d7);
+	background-image: -ms-linear-gradient(top, #3e779d 0%, #65a9d7 100%);
+	color: #fff;
+}
+
+
+.modal {
+	border: #039BE5 solid;
+	font-family: 'Arimo', sans-serif;
+}
+
+.modal-content {
+	text-align: center;
+	background-color: rgba(173,216,230);
+	line-height: .5em
+}
+
+
+.note-header {
+	font-size: 33px;
+	margin-bottom: -20px;
+	color:#039BE5;
+}
+
+.modal-title {
+	font-family: 'Playfair Display SC', serif;
+	font-size: 20px;
+	margin-bottom: 25px
+	}
+
+.note-body {
+	text-align: left;
+	font-size: 16px;
+}
+
+
+#note-input::placeholder {
+    color: blue;
+    opacity: 1; /* Firefox */
+}
+.input-field {
+	color:orange;
+}
+
+i {
+	font-size: 12px;
+}
+
+.fa-heart {
+	color: red
+}
+
+.fa-circle {
+	font-size: 10px;
+	color:#039BE5;
+}

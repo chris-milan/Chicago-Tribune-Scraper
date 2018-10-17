@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+		<link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
+		{{!-- Materialize --}}
+		<link rel="stylesheet" href="/assets/css/materialize.min.js" type="text/css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        {{!-- Google Fonts --}}
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC|Arimo" rel="stylesheet">
+		
+		<title>Chicago Tribune Scraper</title>
+</head>
+
+<body>
+
+<header>
+
+		<a href="/" class="logo">Chicago Tribune Scraper</a>
+		<div class="header-container">
+			<button type="button" class="button" id="clear-articles">Clear Articles</button>
+
+			<a href="/saved" class-"active"><button class="button" id="saved-articles">Saved Articles</button></a>
+			<form action="/scrape" method="GET">
+				<button class="button" type="submit" id="scrape-articles">Scrape Articles</button>
+			</form>
+			<a href="/" class-"active"><button class="button" id="home">Home</button></a>
+			<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+        </div>
+</header>
+	    <div id="parallax-container valign-wrapper" class="parallax-container">
+			<h1><p class="title">Chicago Tribune Scraper</p></h1>
+        <div class="parallax"><img src="/assets/images/lance-anderson-636845-unsplash.jpg" id="main-image"></div>
+
+    </div>
+
+	<div id="container">
+		{{{ body }}}
+	</div>
+
+<footer class="footer">
+  <div class="container">
+    <p>Chicago Tribune Scraper</p>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="/assets/javascript/materialize.min.js"></script>
+<script src="/assets/javascript/init.js"></script>
+<script src="/assets/javascript/app.js"></script>
+
+</body>
+</html>
