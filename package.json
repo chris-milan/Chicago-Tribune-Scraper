@@ -1,5 +1,5 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "Chicago Tribune Scraper",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -19,6 +19,9 @@
     "mongoose": "^5.0.11",
     "morgan": "^1.9.0",
     "request": "^2.88.0"
+  },
+  "scripts": {
+    "start": "node server.js"
   },
   "devDependencies": {
     "nodemon": "^1.18.4"

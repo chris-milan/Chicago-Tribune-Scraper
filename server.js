@@ -41,7 +41,11 @@ app.set("view engine", "handlebars");
 app.use(express.static("public"));
 
 // Connect to the Mongo DB
-mongoose.connect("mongodb://localhost/chicago-tribune-scraped", { useNewUrlParser: true });
+// mongoose.connect("mongodb://localhost/chicago-tribune-scraped", { useNewUrlParser: true });
+
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/chicago-tribune-scraped";
+
+mongoose.connect(MONGODB_URI);
 
 
 // Routes
