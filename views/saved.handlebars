@@ -1,18 +1,17 @@
 {{#each saved}}
 <div class="parallax-container article-content" id={{this._id}} style="background-image: url()">
-<h2>
-<a href="{{this.link}}" class="main-links"target="_blank">{{this.title}}</a>
-</h2>
-<div class="summary-container">
-    {{this.summary}}
-    <form action="/save/{{this._id}}" method="POST">
+    <h2>
+        <a href="{{this.link}}" class="main-links" target="_blank">{{this.title}}</a>
+    </h2>
+    <div class="summary-container">
+        <form action="/save/{{this._id}}" method="POST">
 
-    <button class="button modal-trigger" href="#notes-modal{{this._id}}">Notes</button>
+            <button class="button modal-trigger" href="#notes-modal{{this._id}}">Notes</button>
 
-    <button type="button" id="delete-article" class="button" data-id={{this._id}}>Delete Article</button>
+            <button type="button" id="delete-article" class="button" data-id={{this._id}}>Delete Article</button>
 
-    </form>
-</div>
+        </form>
+    </div>
     <div class="parallax"><img src="{{this.image}}"></div>
 </div>
 
@@ -22,34 +21,38 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4 class="modal-title"><div class="note-header">Notes</div></br></br>"{{this.title}}"</h4>
+                <h4 class="modal-title">
+                    <div class="note-header">Notes</div></br></br>"{{this.title}}"
+                </h4>
             </div>
             <div class="modal-body">
 
                 {{#if this.note}}
-                    {{#each this.note}}
+                {{#each this.note}}
 
-                        <div class="panel panel-default">
-                            <div class="panel-body note-body">
+                <div class="panel panel-default">
+                    <div class="panel-body note-body">
 
-                                <ul><i class="fas fa-circle"></i>&nbsp;&nbsp;{{this.body}}</ul>
+                        <ul><i class="fas fa-circle"></i>&nbsp;&nbsp;{{this.body}}</ul>
 
-                            </div>
-                        </div>
-                    {{/each}}
-                {{else}}
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <h4>No notes for this article yet.</h4>
-                        </div>
                     </div>
+                </div>
+                {{/each}}
+                {{else}}
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <h4>No notes for this article yet.</h4>
+                    </div>
+                </div>
                 {{/if}}
                 <div class="form-group">
                     <input id="note-input{{this._id}}" class="form-control" placeholder=""></input>
 
                 </div>
-                <button type="button" id="add-note" class="button" data-id={{this._id}}><i class="fas fa-plus-circle"></i>&nbsp;Add Note</button>
-                <button type="button" id="delete-note" class="button" data-note-id={{this._id}} data-article-id={{this.id}}><i class="fas fa-minus-circle"></i>&nbsp;Delete Notes</button>
+                <button type="button" id="add-note" class="button" data-id={{this._id}}><i
+                        class="fas fa-plus-circle"></i>&nbsp;Add Note</button>
+                <button type="button" id="delete-note" class="button" data-note-id={{this._id}}
+                    data-article-id={{this.id}}><i class="fas fa-minus-circle"></i>&nbsp;Delete Notes</button>
             </div>
 
         </div>
@@ -57,4 +60,3 @@
 </div>
 
 {{/each}}
-
